@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+    <title>Asian Sushi</title>
+</head>
+
+<body>
+    <div class="container_apropos">
+        <div class="sous_container_apropos">
+            <!-- Le debut du navbar -->
+            <nav>
+                <div class="navbar">
+                    <img src="img/logo.png" alt=" Asian Sushi">
+                    
+                    <ul>
+                        <div class="menu" class="menutoggelcarte">
+                            
+                            <a href="index.html"><li id="menu_links"> Acceuil</li></a>  
+
+                                <a href="sushi_carte.html"> <li id="menu_links"> Carte </li></a> 
+                                <a href="A propos.html"> <li id="menu_links"> A propos </li></a> 
+                                <a href="contact.html"> <li id="menu_links"> Contact </li></a>
+
+                            <li id="toggel1"> <a href="" onclick="toggelmenuclose()"><img src="img/menu.png" alt=""></a></li>
+
+                            <li id="toggel"> <a onclick="toggelmenu()"><img src="img/menu.png" alt=""></a></li>
+
+                        </div>
+                    </ul>
+
+                </div>
+            </nav>
+            <!-- La fin du navbar -->
+
+            <div id="menutoggel" class="menutoggelcarte">
+                <ul>
+                    <a href="index.html"><li id="links"> Acceuil</li></a> 
+                    <a href="sushi_carte.html"> <li id="links"> Carte </li></a> 
+                    <a href="A propos.html"> <li id="links"> A propos </li></a> 
+                    <a href="contact.html"> <li id="links"> Contact </li></a>
+                </ul> 
+            </div>
+
+            <div class="img_about">
+                <img src="img/about.jpg" alt="">
+                <img src="img/about4.webp" alt="">
+            </div>
+
+<div class="text_apropos">
+<p>Asian Sushi est un restaurant asiatique situé dans le quartier de Guéliz, à Marrakech. Spécialisés dans la cuisine japonaise et thaïlandaise, nous vous proposons le meilleur Sushi à Marrakech
+    .
+    De la décoration jusqu’à dans l'assiette notre maître mot est le dépaysement. La légendaire zénitude asiatique s’exprime à travers une décoration branchée aux tons neutres, un cadre en osmose avec la musique d’ambiance aux airs chill-out. Fraîcheur et qualité supérieure sont les mots d’ordre côté cuisine. Formée par de grands chefs asiatiques, la brigade de Asian Sushi vous offre une carte variée mêlant saveurs japonaises et spécialités thaïlandaises, le tout à prix doux.</p>
+</div>
+
+<div class="saumon">
+    <img src="img/poisson.jpeg" alt="">
+</div>
+
+
+
+
+
+
+        </div>
+
+
+
+        <!-- Le debut de footer -->
+        <footer>
+            <div class="footer">
+                <img src="img/logo.png" alt=" logo Asian Sushi ">
+                <ul>
+                    <li>
+                        <h3>Points de vente</h3>
+                        <p>08 Rue Freedom, Casablanca <br>
+                            302 Boulevard Hassan II</p>
+                    </li>
+                    <li>
+                        <h3>Télèphone</h3>
+                        <p>+212524629887 <br>
+                            +212624629887</p>
+                        <div class="icon"> <img src="img/fb.png" alt="">
+                            <img src="img/insta.png" alt="">
+                            <img src="img/twitter.png" alt="">
+                        </div>
+
+                    </li>
+                    <li>
+                        <h3>Horaires d’ouverture</h3>
+                        <p>Lundi - Dimanche 11h00 -23h00</p>
+
+                    </li>
+                    <li>
+                        <h3>Newsletter</h3>
+                        <p>Subscribe to the weekly newsletter for all <br>
+                            the latest updates</p>
+                        <div class="newsletter">
+                            <input type="text" name="" value="Votre Email.." id="text">
+                            <input type="button" value="S'inscrire" id="sinscrire">
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+        </footer>
+        <!-- la fin du footer -->
+        <script>
+            function toggelmenu(){
+                var toggel = document.getElementById("menutoggel");
+                toggel.style.display = "grid";
+                var close = document.getElementById("toggel");
+                close.style.display = "none";
+                var close1 = document.getElementById("toggel1");
+                close1.style.display = "grid";
+    
+            }
+            function toggelmenuclose(){
+                var toggel2 = document.getElementById("menutoggel");
+                toggel2.style.display = "none";
+                var close2 = document.getElementById("toggel");
+                close2.style.display = "grid";
+                var close12 = document.getElementById("toggel1");
+                close12.style.display = "none";
+            }
+        </script>
+
+</body>
+
+</html>

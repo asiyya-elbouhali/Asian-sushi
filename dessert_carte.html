@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+    <title>Asian Sushi</title>
+</head>
+
+<body>
+
+    <div class="container_apropos">
+        <div class="sous_container_apropos">
+            <!-- Le debut du navbar -->
+            <nav>
+                <div class="navbar">
+                    <img src="img/logo.png" alt=" Asian Sushi">
+                    
+                    <ul>
+                        <div class="menu">
+                            <a href="index.html"><li id="menu_links"> Acceuil</li></a> 
+
+                            <a href="sushi_carte.html"> <li id="menu_links"> Carte </li></a> 
+                            <a href="A propos.html"> <li id="menu_links"> A propos </li></a> 
+                            <a href="contact.html"> <li id="menu_links"> Contact </li></a>
+
+                            <li id="toggel1"> <a href="" onclick="toggelmenuclose()"><img src="img/menu.png" alt=""></a></li>
+
+                            <li id="toggel"> <a onclick="toggelmenu()"><img src="img/menu.png" alt=""></a></li>
+
+                        </div>
+                    </ul>
+
+                </div>
+            </nav>
+            <!-- La fin du navbar -->
+            <div id="menutoggel" class="menutoggelcarte">
+                <ul>
+                    <a href="index.html"><li id="links"> Acceuil</li></a>  
+
+                    <a href="sushi_carte.html"> <li id="links"> Carte </li></a> 
+                    <a href="A propos.html"> <li id="links"> A propos </li></a> 
+                    <a href="contact.html"> <li id="links"> Contact </li></a>
+                </ul> 
+            </div>
+
+            <div class="menubar">
+
+                <h2>Menu</h2>
+                
+            </div>
+            <div class="categories">
+                <div class="categorie categorie1">
+                    <a href="sushi_carte.html"> <p>Sushi</p>
+                    </a>
+                </div>
+                <div class="categorie categorie2">
+                    <a href="entree_carte.html"> <p>Entree</p>
+                    </a>
+                </div>
+                <div class="categorie categorie3">
+                    <a href="bento_carte.html"> <p>Bento</p>
+                    </a>
+                    
+                </div>
+                <div class="categorie categorie4">
+                    <a href="brochette_carte.html"> <p>Brochette</p>
+                    </a>
+                    
+                </div>
+                <div class="categorie categorie5">
+                    <a href="riz_carte.html"> <p>Riz</p>
+                    </a>
+                    
+                </div>
+                <div class="categorie categorie6">
+                    <a href="dessert_carte.html"> <p>Dessert </p>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="carte">
+                <div class="products_body">
+                    <div class="products">
+                        <div class="product dessert1">
+                            <div class="product_info"> <h5>CALIFORNIA CLASSIC</h5>
+                                <div class="product_prix"><span>40</span> <p> Dhs</p>  <button>+</button></div>
+                            </div>
+                        </div>
+                        <div class="product dessert2">
+                            <div class="product_info">                      <h5>CALIFORNIA TOBIKO</h5>
+                                <div class="product_prix"> <span>45</span><p>Dhs</p><button>+</button></div>
+                            </div>                        </div>
+                        <div class="product dessert3">
+                            <div class="product_info">                      <h5>FRESH CRABE</h5>
+                                <div class="product_prix"> <span>50</span><p>Dhs</p><button>+</button></div>
+                            </div>                        </div>
+                        <div class="product dessert4">
+                            <div class="product_info">                      <h5>AROMAKI SOUMAN CUIT</h5>
+                                <div class="product_prix"> <span>48</span><p>Dhs</p> <button>+</button></div>
+                            </div>                        </div>
+                        <div class="product dessert5">
+                            <div class="product_info">                      <h5>ARMAKI LOUP TEMPURA</h5>
+                                <div class="product_prix"> <span>50</span><p>Dhs</p> <button>+</button></div>
+                            </div>                        </div>
+                        <div class="product dessert6">
+                            <div class="product_info">                      <h5>CALIFORNIA CLASSIC</h5>
+                                <div class="product_prix"> <span>60</span><p>Dhs</p> <button>+</button></div>
+                            </div>                        </div>
+                    </div>
+                    <div class="panier">
+                        <div class="navpanier">
+                            <p>Panier</p>
+                        </div>
+                        <div class="btn_panier">
+                            <input type="button" value="Validez la commande" id="btn_panier">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+        <!-- Le debut de footer -->
+        <footer>
+            <div class="footer">
+                <img src="img/logo.png" alt=" logo Asian Sushi ">
+                <ul>
+                    <li>
+                        <h3>Points de vente</h3>
+                        <p>08 Rue Freedom, Casablanca <br>
+                            302 Boulevard Hassan II</p>
+                    </li>
+                    <li>
+                        <h3>Télèphone</h3>
+                        <p>+212524629887 <br>
+                            +212624629887</p>
+                        <div class="icon"> <img src="img/fb.png" alt="">
+                            <img src="img/insta.png" alt="">
+                            <img src="img/twitter.png" alt="">
+                        </div>
+
+                    </li>
+                    <li>
+                        <h3>Horaires d’ouverture</h3>
+                        <p>Lundi - Dimanche 11h00 -23h00</p>
+
+                    </li>
+                    <li>
+                        <h3>Newsletter</h3>
+                        <p>Subscribe to the weekly newsletter for all <br>
+                            the latest updates</p>
+                        <div class="newsletter">
+                            <input type="text" name="" value="Votre Email.." id="text">
+                            <input type="button" value="S'inscrire" id="sinscrire">
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+        </footer>
+        <!-- la fin du footer -->
+        <script>
+            function toggelmenu(){
+                var toggel = document.getElementById("menutoggel");
+                toggel.style.display = "grid";
+                var close = document.getElementById("toggel");
+                close.style.display = "none";
+                var close1 = document.getElementById("toggel1");
+                close1.style.display = "grid";
+    
+            }
+            function toggelmenuclose(){
+                var toggel2 = document.getElementById("menutoggel");
+                toggel2.style.display = "none";
+                var close2 = document.getElementById("toggel");
+                close2.style.display = "grid";
+                var close12 = document.getElementById("toggel1");
+                close12.style.display = "none";
+            }
+        </script>
+</body>
+
+</html>

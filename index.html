@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>Asian Sushi</title>
+</head>
+
+<body>
+    <div class="contain
+    er">
+        <div class="sous_container">
+            <!-- Le debut du navbar -->
+            <nav>
+                <div class="navbar">
+                    <img src="img/logo.png" alt=" Asian Sushi">
+                    
+                    <ul>
+                        <div class="menu">
+                               <a href="index.html"><li id="menu_links"> Acceuil</li></a>  
+                                <a href="sushi_carte.html"> <li id="menu_links"> Carte </li></a> 
+                                <a href="A propos.html"> <li id="menu_links"> A propos </li></a> 
+                                <a href="contact.html"> <li id="menu_links"> Contact </li></a>
+
+                            <li id="toggel1"> <a href="" onclick="toggelmenuclose()"><img src="img/menu.png" alt=""></a></li>
+
+                            <li id="toggel"> <a onclick="toggelmenu()"><img src="img/menu.png" alt=""></a></li>
+
+                        </div>
+                    </ul>
+
+                </div>
+            </nav>
+            <!-- La fin du navbar -->
+
+            <div class="first_intrfc">
+
+                <div id="menutoggel">
+                    <ul>
+                        <a href="index.html"><li id="links"> Acceuil</li></a>  
+                        <a href="sushi_carte.html"> <li id="links"> Carte </li></a> 
+                        <a href="A propos.html"> <li id="links"> A propos </li></a> 
+                        <a href="contact.html"> <li id="links"> Contact </li></a>
+                    </ul> 
+                </div>
+
+                <div class="cmd">
+                    <p>-10% SUR VOTRE
+                        1èreCOMMANDE !</p>
+                    <input type="button" value="Profiter de l'offre" id="btn">
+                </div>
+                <div class="livraison">
+                    livraison gratuite à partir de
+                    <div class="dh"> 70 Dhs</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="second_intrfc">
+            <div class="conslt_carte">
+                <input type="button" value="Consulter la carte" id="button">
+
+            </div>
+            <div class="acceuil_items">
+            
+                <div class="item item1">
+                    <h2> Notre Selection </h2>
+                    <p> pour manger <br> les meilleurs <br> sushis <br> à Safi</p>
+                    <p class="prix">155 Dhs </p>
+                    <div class="decouvrir">                     <input type="button" value="Découvrir" id="item_btn">
+                    </div> 
+                </div>
+
+                <div class="item item2">
+                    <h2> Rainbow rolls</h2>
+                    <p> 10 piéces  </p>
+                    <p>Multi Saveurs</p>
+                    <p class="prix" style="margin-top: 124px ;"> 99 Dhs </p>
+                    <div class="decouvrir">                     <input type="button" value="Découvrir" id="item_btn">
+                    </div> 
+                </div>
+
+                <div class="item item3">
+                    <h2> Salades </h2>
+                    <p> Carpaccio, chirashi, <br> Salades, rouleaux </p> 
+                    <p class="prix" style="margin-top: 124px ;">44 Dhs </p>
+                    <div class="decouvrir">                     <input type="button" value="Découvrir" id="item_btn">
+                    </div> 
+                </div>
+               
+
+            </div>
+        </div>
+
+      
+
+
+    </div>
+
+
+
+    <!-- Le debut de footer -->
+    <footer>
+        <div class="footer">
+            <img src="img/logo.png" alt=" logo Asian Sushi ">
+            <ul>
+                <li>
+                    <h3>Points de vente</h3>
+                    <p>08 Rue Freedom, Casablanca <br>
+                        302 Boulevard Hassan II</p>
+                </li>
+                <li>
+                    <h3>Télèphone</h3>
+                    <p>+212524629887 <br>
+                        +212624629887</p>
+                        <div class="icon">                    <img src="img/fb.png" alt="">
+                        <img src="img/insta.png" alt="">
+                        <img src="img/twitter.png" alt="">
+                        </div>
+                        
+                </li>
+                <li>
+                    <h3>Horaires d’ouverture</h3>
+                    <p>Lundi - Dimanche 11h00 -23h00</p>
+
+                </li>
+                <li>
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to the weekly newsletter for all <br>
+                        the latest updates</p>
+                        <div class="newsletter">
+                            <input type="text" name="" value="Votre Email.." id="text">
+                            <input type="button" value="S'inscrire" id="sinscrire">
+                        </div>
+                   
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+    <!-- la fin du footer -->
+    <script>
+        function toggelmenu(){
+            var toggel = document.getElementById("menutoggel");
+            toggel.style.display = "grid";
+            var close = document.getElementById("toggel");
+            close.style.display = "none";
+            var close1 = document.getElementById("toggel1");
+            close1.style.display = "grid";
+
+        }
+        function toggelmenuclose(){
+            var toggel2 = document.getElementById("menutoggel");
+            toggel2.style.display = "none";
+            var close2 = document.getElementById("toggel");
+            close2.style.display = "grid";
+            var close12 = document.getElementById("toggel1");
+            close12.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
