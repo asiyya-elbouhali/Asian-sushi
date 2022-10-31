@@ -6,12 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
-    <script src="script.js"></script>
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <title>Asian Sushi</title>
 </head>
-
+ 
 <body>
     <div class="contain
     er">
@@ -23,10 +21,10 @@
                     
                     <ul>
                         <div class="menu">
-                               <a href="index.html"><li id="menu_links"> Acceuil</li></a>  
-                                <a href="sushi_carte.html"> <li id="menu_links"> Carte </li></a> 
-                                <a href="A propos.html"> <li id="menu_links"> A propos </li></a> 
-                                <a href="contact.html"> <li id="menu_links"> Contact </li></a>
+                               <a href="index.html"><li id="menu_links" class="menu_links"> Acceuil</li></a>  
+                                <a href="sushi_carte.html"> <li id="menu_links1" class="menu_links"> Carte </li></a> 
+                                <a href="A propos.html"> <li id="menu_links2" class="menu_links"> A propos </li></a> 
+                                <a href="contact.html"> <li id="menu_links3" class="menu_links"> Contact </li></a>
 
                             <li id="toggel1"> <a href="" onclick="toggelmenuclose()"><img src="img/menu.png" alt=""></a></li>
 
@@ -65,7 +63,9 @@
 
         <div class="second_intrfc">
             <div class="conslt_carte">
-                <input type="button" value="Consulter la carte" id="button">
+                <a href="sushi_carte.html">
+<button id="button">Consulter la carte</button>
+                </a>
 
             </div>
             <div class="acceuil_items">
@@ -74,7 +74,8 @@
                     <h2> Notre Selection </h2>
                     <p> pour manger <br> les meilleurs <br> sushis <br> à Safi</p>
                     <p class="prix">155 Dhs </p>
-                    <div class="decouvrir">                     <input type="button" value="Découvrir" id="item_btn">
+                    <div class="decouvrir">                    
+                    <input type="button" value="Découvrir" id="item_btn">
                     </div> 
                 </div>
 
@@ -83,7 +84,8 @@
                     <p> 10 piéces  </p>
                     <p>Multi Saveurs</p>
                     <p class="prix" style="margin-top: 124px ;"> 99 Dhs </p>
-                    <div class="decouvrir">                     <input type="button" value="Découvrir" id="item_btn">
+                    <div class="decouvrir">                     
+                    <input type="button" value="Découvrir" id="item_btn">
                     </div> 
                 </div>
 
@@ -91,7 +93,8 @@
                     <h2> Salades </h2>
                     <p> Carpaccio, chirashi, <br> Salades, rouleaux </p> 
                     <p class="prix" style="margin-top: 124px ;">44 Dhs </p>
-                    <div class="decouvrir">                     <input type="button" value="Découvrir" id="item_btn">
+                    <div class="decouvrir">                     
+                    <input type="button" value="Découvrir" id="item_btn">
                     </div> 
                 </div>
                
@@ -165,6 +168,9 @@
             close12.style.display = "none";
         }
     </script>
+
+        <script src="script.js"></script>
+ 
 </body>
 
 </html>

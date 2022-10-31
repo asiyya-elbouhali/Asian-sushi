@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 
     <title>Asian Sushi</title>
@@ -72,50 +71,47 @@
 
             </div>
             <div class="categories">
-                <div class="categorie categorie1">
-                    <a href="sushi_carte.html">
-                        <p>Sushi</p>
-                    </a>
-                </div>
-                <div class="categorie categorie2">
-                    <a href="entree_carte.html">
-                        <p>Entree</p>
-                    </a>
-                </div>
-                <div class="categorie categorie3">
-                    <a href="bento_carte.html">
-                        <p>Bento</p>
-                    </a>
+                <a class="categorie categorie1"
+                    onclick="AfficherLaCategorieSuivante('.products');opacityofcategorie('.categorie1')">
+                    <p>Sushi</p>
+                </a>
+                <a class="categorie categorie2"
+                    onclick="AfficherLaCategorieSuivante('.products_entree');opacityofcategorie('.categorie2')">
+                    <p>Entree</p>
+                </a>
+                <a class="categorie categorie3"
+                    onclick="AfficherLaCategorieSuivante('.products_bento');opacityofcategorie('.categorie3')">
+                    <p>Bento</p>
+                </a>
 
-                </div>
-                <div class="categorie categorie4">
-                    <a href="brochette_carte.html">
-                        <p>Brochette</p>
-                    </a>
+                <a class="categorie categorie4"
+                    onclick="AfficherLaCategorieSuivante('.products_brochette');opacityofcategorie('.categorie4')">
+                    <p>Brochette</p>
+                </a>
 
-                </div>
-                <div class="categorie categorie5">
-                    <a href="riz_carte.html">
-                        <p>Riz</p>
-                    </a>
+                <a class="categorie categorie5"
+                    onclick="AfficherLaCategorieSuivante('.products_riz');opacityofcategorie('.categorie5')">
+                    <p>Riz</p>
+                </a>
 
-                </div>
-                <div class="categorie categorie6">
-                    <a href="dessert_carte.html">
-                        <p>Dessert </p>
-                    </a>
-                </div>
+                <a class="categorie categorie6"
+                    onclick="AfficherLaCategorieSuivante('.products_dessert');opacityofcategorie('.categorie6')">
+                    <p>Dessert </p>
+                </a>
 
+ 
             </div>
 
             <div class="carte">
                 <div class="products_body">
+                    <!-- carte Sushi -->
                     <div class="products">
                         <div class="product product1">
                             <div class="product_info">
                                 <h5>CALIFORNIA CLASSIC</h5>
                                 <div class="product_prix"><span>40</span>
-                                    <p> Dhs</p> <button>+</button>
+                                    <p> Dhs</p>
+                                    <div class="btn_pd"><button >+</button> </div>
                                 </div>
                             </div>
                         </div>
@@ -123,7 +119,8 @@
                             <div class="product_info">
                                 <h5>CALIFORNIA TOBIKO</h5>
                                 <div class="product_prix"> <span>45</span>
-                                    <p>Dhs</p><button>+</button>
+                                    <p>Dhs</p>
+                                    <div class="btn_pd"><button>+</button> </div>
                                 </div>
                             </div>
                         </div>
@@ -131,7 +128,8 @@
                             <div class="product_info">
                                 <h5>FRESH CRABE</h5>
                                 <div class="product_prix"> <span>50</span>
-                                    <p>Dhs</p><button>+</button>
+                                    <p>Dhs</p>
+                                    <div class="btn_pd"><button>+</button> </div>
                                 </div>
                             </div>
                         </div>
@@ -139,7 +137,8 @@
                             <div class="product_info">
                                 <h5>AROMAKI SOUMAN CUIT</h5>
                                 <div class="product_prix"> <span>48</span>
-                                    <p>Dhs</p> <button>+</button>
+                                    <p>Dhs</p>
+                                    <div class="btn_pd"><button>+</button> </div>
                                 </div>
                             </div>
                         </div>
@@ -147,11 +146,127 @@
                             <div class="product_info">
                                 <h5>ARMAKI LOUP TEMPURA</h5>
                                 <div class="product_prix"> <span>50</span>
-                                    <p>Dhs</p> <button>+</button>
+                                    <p>Dhs</p>
+                                    <div class="btn_pd"><button>+</button> </div>
                                 </div>
                             </div>
                         </div>
                         <div class="product product6">
+                            <div class="product_info">
+                                <h5>CALIFORNIA CREAM CHEESE</h5>
+                                <div class="product_prix"> <span>60</span>
+                                    <p>Dhs</p>
+                                    <div class="btn_pd"><button>+</button> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- fin carte sushi -->
+
+
+                    <!-- carte Bento -->
+                    <div class="products_bento">
+                        <div class="product bento1">
+                            <div class="product_info">
+                                <h5>BENTO TSUMATA</h5>
+                                <div class="product_prix"><span>40</span>
+                                    <p> Dhs</p> <div class="btn_pd"><button>+</button> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product bento2">
+                            <div class="product_info">
+                                <h5>BENTO MURAWAY</h5>
+                                <div class="product_prix"> <span>45</span>
+                                    <p>Dhs</p><div class="btn_pd"><button >+</button> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product bento3">
+                            <div class="product_info">
+                                <h5>BENTO ATO</h5>
+                                <div class="product_prix"> <span>50</span>
+                                    <p>Dhs</p><div class="btn_pd"><button >+</button> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product bento4">
+                            <div class="product_info">
+                                <h5>WOK JAP POULET</h5>
+                                <div class="product_prix"> <span>48</span>
+                                    <p>Dhs</p> <div class="btn_pd"><button >+</button> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product bento5">
+                            <div class="product_info">
+                                <h5>WOK JAP GAMBAS</h5>
+                                <div class="product_prix"> <span>50</span>
+                                    <p>Dhs</p> <div class="btn_pd"><button >+</button> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product bento6">
+                            <div class="product_info">
+                                <h5>WOK AIGRE DOUX</h5>
+                                <div class="product_prix"> <span>60</span>
+                                    <p>Dhs</p> <div class="btn_pd"><button >+</button> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- fin carte Bento -->
+
+
+
+
+
+
+                    <!-- carte Entree -->
+                    <div class="products_entree">
+                        <div class="product entree1">
+                            <div class="product_info">
+                                <h5>CALIFORNIA CLASSIC</h5>
+                                <div class="product_prix"><span>40</span>
+                                    <p> Dhs</p><div class="btn_pd"><button>+</button> </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product entree2">
+                            <div class="product_info">
+                                <h5>CALIFORNIA TOBIKO</h5>
+                                <div class="product_prix"> <span>45</span>
+                                    <p>Dhs</p><div class="btn_pd"><button>+</button> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product entree3">
+                            <div class="product_info">
+                                <h5>FRESH CRABE</h5>
+                                <div class="product_prix"> <span>50</span>
+                                    <p>Dhs</p><button>+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product entree4">
+                            <div class="product_info">
+                                <h5>AROMAKI SOUMAN CUIT</h5>
+                                <div class="product_prix"> <span>48</span>
+                                    <p>Dhs</p> <button>+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product entree5">
+                            <div class="product_info">
+                                <h5>ARMAKI LOUP TEMPURA</h5>
+                                <div class="product_prix"> <span>50</span>
+                                    <p>Dhs</p> <button>+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product entree6">
                             <div class="product_info">
                                 <h5>CALIFORNIA CLASSIC</h5>
                                 <div class="product_prix"> <span>60</span>
@@ -160,17 +275,224 @@
                             </div>
                         </div>
                     </div>
+                    <!-- fin carte Entree -->
+
+
+
+
+
+
+                    <!-- carte brochette -->
+                    <div class="products_brochette">
+                        <div class="product brochette1">
+                            <div class="product_info">
+                                <h5>CALIFORNIA CLASSIC</h5>
+                                <div class="product_prix"><span>40</span>
+                                    <p> Dhs</p> <button>+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product brochette2">
+                            <div class="product_info">
+                                <h5>CALIFORNIA TOBIKO</h5>
+                                <div class="product_prix"> <span>45</span>
+                                    <p>Dhs</p><button>+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product brochette3">
+                            <div class="product_info">
+                                <h5>FRESH CRABE</h5>
+                                <div class="product_prix"> <span>50</span>
+                                    <p>Dhs</p><button>+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product brochette4">
+                            <div class="product_info">
+                                <h5>AROMAKI SOUMAN CUIT</h5>
+                                <div class="product_prix"> <span>48</span>
+                                    <p>Dhs</p> <button>+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product brochette5">
+                            <div class="product_info">
+                                <h5>ARMAKI LOUP TEMPURA</h5>
+                                <div class="product_prix"> <span>50</span>
+                                    <p>Dhs</p> <button>+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product brochette6">
+                            <div class="product_info">
+                                <h5>CALIFORNIA CLASSIC</h5>
+                                <div class="product_prix"> <span>60</span>
+                                    <p>Dhs</p> <button>+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- fin carte brochette -->
+
+
+
+
+
+
+                    <!-- carte dessert -->
+
+                    <div class="products_dessert">
+                        <div class="product dessert1">
+                            <div class="product_info">
+                                <h5>CALIFORNIA CLASSIC</h5>
+                                <div class="product_prix"><span>40</span>
+                                    <p> Dhs</p> <button>+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product dessert2">
+                            <div class="product_info">
+                                <h5>CALIFORNIA TOBIKO</h5>
+                                <div class="product_prix"> <span>45</span>
+                                    <p>Dhs</p><button>+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product dessert3">
+                            <div class="product_info">
+                                <h5>FRESH CRABE</h5>
+                                <div class="product_prix"> <span>50</span>
+                                    <p>Dhs</p><button>+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product dessert4">
+                            <div class="product_info">
+                                <h5>AROMAKI SOUMAN CUIT</h5>
+                                <div class="product_prix"> <span>48</span>
+                                    <p>Dhs</p> <button>+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product dessert5">
+                            <div class="product_info">
+                                <h5>ARMAKI LOUP TEMPURA</h5>
+                                <div class="product_prix"> <span>50</span>
+                                    <p>Dhs</p> <button>+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product dessert6">
+                            <div class="product_info">
+                                <h5>CALIFORNIA CLASSIC</h5>
+                                <div class="product_prix"> <span>60</span>
+                                    <p>Dhs</p> <button>+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- fin carte dessert -->
+
+
+
+
+
+                    <!-- carte riz -->
+                    <div class="products_riz">
+                        <div class="product riz1">
+                            <div class="product_info">
+                                <h5>CALIFORNIA CLASSIC</h5>
+                                <div class="product_prix"><span>40</span>
+                                    <p> Dhs</p> <button>+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product riz2">
+                            <div class="product_info">
+                                <h5>CALIFORNIA TOBIKO</h5>
+                                <div class="product_prix"> <span>45</span>
+                                    <p>Dhs</p><button>+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product riz3">
+                            <div class="product_info">
+                                <h5>FRESH CRABE</h5>
+                                <div class="product_prix"> <span>50</span>
+                                    <p>Dhs</p><button>+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product riz4">
+                            <div class="product_info">
+                                <h5>AROMAKI SOUMAN CUIT</h5>
+                                <div class="product_prix"> <span>48</span>
+                                    <p>Dhs</p> <button>+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product riz5">
+                            <div class="product_info">
+                                <h5>ARMAKI LOUP TEMPURA</h5>
+                                <div class="product_prix"> <span>50</span>
+                                    <p>Dhs</p> <button>+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product riz6">
+                            <div class="product_info">
+                                <h5>CALIFORNIA CLASSIC</h5>
+                                <div class="product_prix"> <span>60</span>
+                                    <p>Dhs</p> <button>+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- fin carte riz -->
+
+
+
+
+
+
+
+
+                    <!-- panier -->
+
                     <div class="panier">
                         <div class="navpanier">
                             <p>Panier</p>
                         </div>
+
+                        <div class="bodypanier">
+                            <div class="product-header">
+                                <h5 class="product-title">Product</h5>
+                                <h5 class="price">Price</h5>
+                                <h5 class="quantity">Qty</h5>
+                                <h5 class="total-pr-product">Total</h5>
+                            </div>
+                            <div id="basket-products" class="basket-products">
+                                
+                            </div>
+
+
+                        </div>
+
+
                         <div class="btn_panier">
                             <input type="button" value="Validez la commande" id="btn_panier">
+                            
                         </div>
 
                     </div>
 
+
                 </div>
+
 
 
 
@@ -185,8 +507,6 @@
 
 
         </div>
-
-
 
         <!-- Le debut de footer -->
         <footer>
@@ -247,6 +567,7 @@
                 close12.style.display = "none";
             }
         </script>
+        <script src="script.js"></script>
 </body>
 
 </html>
