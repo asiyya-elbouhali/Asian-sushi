@@ -1,3 +1,12 @@
+
+
+
+
+
+
+
+
+
 let add_pd=document.getElementsByClassName('btn_pd');
 for (let i = 0;i < add_pd.length; i++){
     add_pd[i].addEventListener('click', topanier);
@@ -6,6 +15,7 @@ function topanier() {
     window.location.reload()
     
 }
+
 function addToCart(event){
     btn=event.target;
 }
@@ -21,15 +31,15 @@ let products = [
         name: 'CALIFORNIA TOBIKO', coin: 'DH', price: 50, inCart: 0
     },
     {
-        name: 'AROMAKI SAUMON CUIT', coin: 'DH', price: 35, inCart: 0
+        name: 'FRESH CRABE', coin: 'DH', price: 35, inCart: 0
     },
     {
-        name: 'AROMAKI LOUP TEMPURA', coin: 'DH', price: 60,inCart: 0
+        name: 'AROMAKI SAUMON CUIT', coin: 'DH', price: 60,inCart: 0
     },
     {
-        name: 'CALIFORNIA CREAM CHEESE', coin: 'DH', price: 60, inCart: 0
+        name: 'ARMAKI LOUP TEMPURA', coin: 'DH', price: 60, inCart: 0
     }, {
-        name: 'BENTO TSUMATA', coin: 'DH', price: 60, inCart: 0
+        name: 'CALIFORNIA CREAM CHEESE', coin: 'DH', price: 60, inCart: 0
     }, {
         name: 'BENTO MURAWAY', coin: 'DH', price: 60, inCart: 0
     }, {
@@ -212,6 +222,8 @@ dispalyCart();
 // *************************************************************************************
 // *************************************************************************************
 // *************************************************************************************
+
+
 
 
 
